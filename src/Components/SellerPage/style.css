@@ -1,0 +1,25 @@
+/* SellerPage.css */
+
+.seller-info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.seller-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.seller-details {
+  flex-grow: 1;
+}
+
+.homePageBtn {
+  width: 30px;
+  height: 30px;
+  background-color: gray;
+}

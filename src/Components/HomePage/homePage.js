@@ -4,6 +4,7 @@ import CarCard from "../CarCard/CarCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import camryImg from "../../img/camry.jpg";
 
 class HomePage extends Component {
   constructor() {
@@ -17,6 +18,8 @@ class HomePage extends Component {
           year: 2021,
           price: 25000,
           description: "bom carro",
+          img: camryImg,
+          seller: "Joaquim Cars",
         },
         {
           id: 2,
@@ -25,6 +28,8 @@ class HomePage extends Component {
           year: 2020,
           price: 22000,
           description: "japonês clássico",
+          img: "https://cdn.motor1.com/images/mgl/RzE0m/s1/2020-honda-civic-hatchback-facelift.jpg",
+          seller: "Joaquim Cars",
         },
         {
           id: 3,
@@ -33,6 +38,8 @@ class HomePage extends Component {
           year: 2019,
           price: 53000,
           description: "melhor carro do mundo",
+          img: "https://cdn.motor1.com/images/mgl/GOoOV/s3/ford-ka-2019-antes-e-depois.jpg",
+          seller: "Joaquim Cars",
         },
         {
           id: 4,
@@ -41,6 +48,8 @@ class HomePage extends Component {
           year: 2019,
           price: 53000,
           description: "melhor carro do mundo",
+          img: "https://cdn.motor1.com/images/mgl/GOoOV/s3/ford-ka-2019-antes-e-depois.jpg",
+          seller: "Joaquim Cars",
         },
         {
           id: 5,
@@ -49,6 +58,8 @@ class HomePage extends Component {
           year: 2019,
           price: 53000,
           description: "melhor carro do mundo",
+          img: "https://cdn.motor1.com/images/mgl/GOoOV/s3/ford-ka-2019-antes-e-depois.jpg",
+          seller: "Joaquim Cars",
         },
         {
           id: 6,
@@ -57,8 +68,9 @@ class HomePage extends Component {
           year: 2019,
           price: 53000,
           description: "melhor carro do mundo",
+          img: "https://cdn.motor1.com/images/mgl/GOoOV/s3/ford-ka-2019-antes-e-depois.jpg",
+          seller: "Joaquim Cars",
         },
-        // Adicione mais carros aqui
       ],
       searchMake: "",
     };
@@ -115,6 +127,8 @@ class HomePage extends Component {
                     model={car.model}
                     price={car.price}
                     description={car.description}
+                    img={car.img}
+                    sellerName={car.seller}
                   />
                 </div>
               ))}
