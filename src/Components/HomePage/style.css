@@ -1,0 +1,46 @@
+@import "~font-awesome/css/font-awesome.min.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+.HomePage-top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 300px;
+}
+
+.search-container i {
+  width: 25%;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.search-input {
+  width: 150%;
+  height: 35px;
+  border: none;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}

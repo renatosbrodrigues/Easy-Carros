@@ -13,22 +13,26 @@ const SellerPage = () => {
   };
 
   return (
-    <div>
+    <div className="seller-page-body">
       <Header></Header>
-      <h1>Informações do Vendedor</h1>
-      <div className="seller-info">
-        <div className="seller-image">
-          <img src={sellerInfo.profileImage} alt="Foto do Vendedor" />
-        </div>
-        <div className="seller-details">
-          <h2>{sellerInfo.name}</h2>
-          <p>Telefone: {sellerInfo.phone}</p>
-          <p>Endereço: {sellerInfo.address}</p>
+      <div className="seller-page-container">
+        <div className="seller-card">
+          <h1>Informações do Vendedor</h1>
+          <div className="seller-info">
+            <div className="seller-image">
+              <img src={sellerInfo.profileImage} alt="Foto do Vendedor" />
+            </div>
+            <div className="seller-details">
+              <h2>{sellerInfo.name}</h2>
+              <p>Telefone: {sellerInfo.phone}</p>
+              <p>Endereço: {sellerInfo.address}</p>
+            </div>
+          </div>
+          <Link className="HomePagebtn" to={"/"}>
+            Voltar
+          </Link>
         </div>
       </div>
-      <Link className="HomePagebtn" to={"/"}>
-        Voltar
-      </Link>
     </div>
   );
 };

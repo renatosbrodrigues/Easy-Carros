@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import camryImg from "../../img/camry.jpg";
+import "./style.css";
 
 class HomePage extends Component {
   constructor() {
@@ -17,7 +18,7 @@ class HomePage extends Component {
           model: "Camry",
           year: 2021,
           price: 25000,
-          description: "bom carro",
+          description: "Moderno",
           img: camryImg,
           seller: "Joaquim Cars",
         },
@@ -37,28 +38,28 @@ class HomePage extends Component {
           model: "ka",
           year: 2019,
           price: 53000,
-          description: "melhor carro do mundo",
+          description: "GOAT",
           img: "https://cdn.motor1.com/images/mgl/GOoOV/s3/ford-ka-2019-antes-e-depois.jpg",
           seller: "Joaquim Cars",
         },
         {
           id: 4,
-          make: "Ford",
-          model: "ka",
-          year: 2019,
-          price: 53000,
-          description: "melhor carro do mundo",
-          img: "https://cdn.motor1.com/images/mgl/GOoOV/s3/ford-ka-2019-antes-e-depois.jpg",
+          make: "Toyota",
+          model: "Supra",
+          year: 2022,
+          price: 140000,
+          description: "lindo",
+          img: "https://upload.wikimedia.org/wikipedia/commons/0/09/Toyota_Supra_Monrepos_2019_IMG_1898.jpg",
           seller: "Joaquim Cars",
         },
         {
           id: 5,
-          make: "Ford",
-          model: "ka",
-          year: 2019,
-          price: 53000,
-          description: "melhor carro do mundo",
-          img: "https://cdn.motor1.com/images/mgl/GOoOV/s3/ford-ka-2019-antes-e-depois.jpg",
+          make: "VolksWagen",
+          model: "Up tsi",
+          year: 2018,
+          price: 45000,
+          description: "Potente e veloz",
+          img: "https://quatrorodas.abril.com.br/wp-content/uploads/2021/08/volkswagen_up_xtreme_4.jpeg?quality=70&strip=info",
           seller: "Joaquim Cars",
         },
         {
@@ -67,7 +68,7 @@ class HomePage extends Component {
           model: "ka",
           year: 2019,
           price: 53000,
-          description: "melhor carro do mundo",
+          description: "GOAT",
           img: "https://cdn.motor1.com/images/mgl/GOoOV/s3/ford-ka-2019-antes-e-depois.jpg",
           seller: "Joaquim Cars",
         },
@@ -104,14 +105,18 @@ class HomePage extends Component {
     return (
       <div>
         <Header></Header>
-        <h1>Easy Carros - Encontre seu carro dos sonhos</h1>
-        <div>
-          <input
-            type="text"
-            placeholder="Pesquisar por marca"
-            value={searchMake}
-            onChange={this.handleSearchChange}
-          />
+        <div className="HomePage-top">
+          <h1>Easy Carros - Encontre seu carro dos sonhos</h1>
+          <div className="search-container">
+            <input
+              type="text"
+              placeholder="Pesquisar por marca"
+              value={searchMake}
+              onChange={this.handleSearchChange}
+              className="search-input"
+            />
+            <i className="fa fa-search"></i>
+          </div>
         </div>
         <div>
           <h2>Carros Disponíveis:</h2>
